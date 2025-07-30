@@ -5,7 +5,7 @@
   --color-ultralight: hsl(30, 54%, 90%);
 
   --color-brown: hsl(14, 45%, 36%);
-  --color-bg: hsl(26, 24%, 81%);
+  --color-bg: #F3E5D8;
   --color-rose: hsl(330, 100%, 98%);
   --color-highlight: hsl(332, 51%, 32%);
 }
@@ -14,25 +14,25 @@ body {
   padding: 0;
   margin: 0;
   font-family: Outfit, sans-serif;
+  height: auto;
+  
 }
 
 main {
-  height: 100dvh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  position: relative;
   background-color: var(--color-bg);
 }
 
 .card {
-  margin-top: auto;
-  width: 35rem;
-  color: var(--color-dark);
+  margin: 3rem 0;
+  width: 40rem;
+  color: var(--color-medium);
   background-color: #fff;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 15px;
 }
 
@@ -53,7 +53,8 @@ main {
 
 .rec-info_title {
     margin: 1em;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 1.2rem;
     color: var(--color-highlight);
 }
 
@@ -61,27 +62,54 @@ main {
     font-family: "Young Serif", serif;
     font-size: 2em;
     font-weight: 300;
+    color: var(--color-dark)
 }
 
 
 .step_title {
     color: var(--color-brown);
     font-family: "Young Serif", serif;
+    font-size: 1.7rem;
+    font-weight: 200;
 }
+
+.nut-table {
+  width: 100%;
+}
+
+td {
+  padding: .8rem 2rem;
+}
+
+.nut-table tr:not(:last-child) td{
+  border-bottom: 1px solid var(--color-light);
+}
+
+.nut-table td:last-child {
+  color: var(--color-brown);
+  font-weight: 700;
+}
+
+
 
 .bold_text_beginning {
     font-weight: 700;
 }
 
 li {
-    margin-bottom: .5em;
+    margin-bottom: .6em;
 }
 
-ol li::marker{
+li::marker{
     color: var(--color-brown);
     font-weight: 700;
 }
 
 .step:not(:last-child){
     border-bottom: 1px solid var(--color-light);
+}
+
+.margin_marker {
+  margin-left: 1rem;
+  display: block;
 }
